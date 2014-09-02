@@ -13,6 +13,8 @@
 
 ActiveRecord::Schema.define(version: 20140830013830) do
 
+  enable_extension "plpgsql"
+
   create_table "notes", force: true do |t|
     t.string   "title"
     t.text     "description"
