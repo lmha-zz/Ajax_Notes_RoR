@@ -1,0 +1,70 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require foundation_and_overrides
+
+ */
+
+h4 {
+	border:1px solid gainsboro;
+	border-bottom: 1px dashed gainsboro;
+	padding: 10px 20px;
+	margin: 20px 0 0 0;
+	position: relative;
+	background-color: whitesmoke;
+	a {
+		text-align: right;
+		position: absolute;
+		right:5%;
+		color: red;
+	}
+	a:hover {
+		color: firebrick;
+		font-weight: bold;
+	}
+}
+input[type="text"] {
+	margin: 20px 0 20px 0;
+}
+textarea {
+	resize: none;
+}
+span {
+	display: inline-block;
+	min-height: 32px;
+	width: 90%;
+}
+.description {
+	border:1px solid gainsboro;
+	border-top: none;
+	min-height: 45px;
+	padding: 10px 20px;
+	margin: 0 0 30px 0;
+	background-color:ghostwhite;
+}
+.error {
+	color:red;
+	margin: 0;
+	text-align: center;
+}
+#edit_title {
+	border:none;
+	background-color: transparent !important;
+	box-shadow: none !important;
+	border: none !important;
+	margin: 0 !important;
+	font-size: 1.4375rem !important;
+	display: inline-block;
+	padding: 0 !important;
+}

@@ -1,0 +1,3 @@
+<% flash[:errors].each do |error| %>
+	$('#error_wrapper').append("<p class='error'><%= escape_javascript(error) %></p>")
+<% end %>
